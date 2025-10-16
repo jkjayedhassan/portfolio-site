@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Dynamic Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor"></div>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="section home">
+    <div class="overlay"></div>
+    <div class="content">
+      <img src="images/profile.jpg" class="profile" alt="Profile Picture" />
+      <h1>Hello, I'm <span>Mohammad Jahed Hasan Bhuain</span></h1>
+      <p>Creative Front-End Developer & Designer 💻</p>
+      <a href="#portfolio" class="btn">Explore My Work</a>
+    </div>
+  </header>
+
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>I’m a passionate developer who loves mixing design, motion, and code. My focus is to build aesthetic and functional websites with great user experiences.</p>
+  </section>
+
+  <section id="portfolio" class="section portfolio">
+    <h2>Featured Projects</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/project1.jpg" alt="Project 1" />
+        <div class="card-content">
+          <h3>Creative Portfolio</h3>
+          <p>A personal portfolio with stunning animations and effects.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/project2.jpg" alt="Project 2" />
+        <div class="card-content">
+          <h3>Dynamic Blog</h3>
+          <p>A modern blog system that loads posts dynamically from local files.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="section blog">
+    <h2>Latest Articles</h2>
+    <div id="blog-container" class="blog-grid">
+      <!-- Blog posts will load dynamically -->
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Message..." required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Your Name | Designed with ❤️
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
